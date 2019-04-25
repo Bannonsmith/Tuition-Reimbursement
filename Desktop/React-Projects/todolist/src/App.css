@@ -1,0 +1,29 @@
+.main {
+  background-color: blue;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 2%;
+
+
+
+}
+.purple {
+  background-color: purple;
+  color: white;
+}
+.red {
+  background-color: red;
+  margin-left: 1%;
+}
+.flex {
+  display: flex;
+  
+}
+li {
+  list-style-type: none;
+}
+.green {
+  background-color: green;
+}
