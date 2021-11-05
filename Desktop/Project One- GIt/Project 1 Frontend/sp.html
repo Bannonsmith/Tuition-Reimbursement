@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <table style="border: 1px solid black" id="myTable">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Movie Title</th>
+                        <th>Runtime</th>
+                    </tr>
+                </thead>
+                <tbody id="myTBody">
+        
+                </tbody>
+            </table>
+
+            <button onclick="getApprovals()">Populate Movies</button>
+
+
+
+
+
+        
+    
+</body>
+<script> 
+
+    async function getApprovals() {
+
+        console.log("Here")
+
+        const supervisorUrl = "http://localhost:7001/approvals"
+        const httpResponse = await fetch(supervisorUrl);
+        const body = await httpResponse.json();
+
+        console.log (body);
+        let tableElement = document.getElementById("myTBody");
+        tableElement.innerHTML = "";
+
+   
+        for (b of body) {
+            let bRow = document.createElement('tr');
+            let button = document.createElement('button');
+            tableElement.appendChild(bRow);
+            tableElement.appendChild(button);
+
+            for (prop in b) {
+                let propData = document.createElement('td');
+                let button = document.createElement(`<button>submit</button>`);
+                propData.innerHTML = b[prop];
+                bRow.appendChild(propData)
+            }
+        }
+
+    }
+
+</script>
+</html>
