@@ -23,8 +23,10 @@ To-do list:
 * Registration
 
 ## Getting Started
-git clone 
-
+git clone https://github.com/Bannonsmith/Tuition-Reimbursement.git
+Run your IntelliJ
+In the app,start the program
+Then use Postman to send your requests to my application
 
 ## Usage
 Install Postman and you can set your localhost up on postman and send your REST request to the application.
