@@ -4,11 +4,11 @@ a full-stack web application that allows employees to submit requests for reimbu
 
 ## Technologies Used
 
-**Java**
-**Javalin**
-**AWS**
-**JDBC**
-**Postman**
+- **Java**
+- **Javalin**
+- **AWS**
+- **JDBC**
+- **Postman**
 
 ## Features
 List of features ready and TODOs for furture development
@@ -17,5 +17,21 @@ List of features ready and TODOs for furture development
 - Deposit
 - Transfer
 
+To-do list:
 
+* Login
+* Registration
+
+## Getting Started
+git clone 
+
+
+## Usage
+Install Postman and you can set your localhost up on postman and send your REST request to the application.
+
+## Contributors
+Solo Project
+
+## License
+This project uses the following license: <license_name>.
 
